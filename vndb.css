@@ -36,6 +36,6 @@ input[type=radio]:focus {
 /* Hides irrelevant elements */
 div#support,
 p.screenshots,
-nav > article:last-child {
+body > nav > article:last-child {
     display: none;
 }
