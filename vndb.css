@@ -1,0 +1,41 @@
+/* 
+Custom CSS for vndb.org's "Angelic Serenade (dark blue)" skin.
+Disable design-altering extensions such as Dark Reader.
+Last updated: 28/03/2024
+*/
+
+/* Color overrides */
+html {
+    --grayedout: rgb(132, 182, 224);
+    --boxtitle:  rgb(132, 182, 224);
+    --footer:    rgb(132, 182, 224);
+    --border:    rgb(40, 100, 160);
+    --secborder: rgb(40, 100, 160);
+    --statok:    rgb(50, 255, 50);
+    --statnok:   rgb(255, 50, 50);
+    --boxbg:     rgba(6, 24, 40, 0.75);
+}
+/* Removes the Angelic Serenade character (vndb.org/c3005) */
+body {
+    background: rgb(0, 0, 0);
+}
+/* Styles the title "the visual novel database" */
+body > header h1 {
+    font: bold 32px "Arial", serif;
+    color: rgb(255, 178, 0);
+}
+main h1,
+main h2 {
+    font-family: "Arial", serif;
+}
+/* Removes focus outline for checkboxes and radio buttons */
+input[type=checkbox]:focus,
+input[type=radio]:focus {
+    outline: none;
+}
+/* Hides irrelevant elements */
+div#support,
+p.screenshots,
+nav > article:last-child {
+    display: none;
+}
