@@ -15,27 +15,44 @@ html {
     --statnok:   rgb(255, 50, 50);
     --boxbg:     rgba(6, 24, 40, 0.75);
 }
+
 /* Removes the Angelic Serenade character (vndb.org/c3005) */
 body {
-    background: rgb(0, 0, 0);
+    background-image: none;
 }
+
 /* Styles the title "the visual novel database" */
 body > header h1 {
     font: bold 32px "Arial", serif;
     color: rgb(255, 178, 0);
 }
-main h1,
-main h2 {
+nav h1, nav h2 {
+    font-family: "Tahoma", serif;
+}
+main h1, main h2 {
     font-family: "Arial", serif;
 }
+
 /* Removes focus outline for checkboxes and radio buttons */
 input[type=checkbox]:focus,
 input[type=radio]:focus {
     outline: none;
 }
+
 /* Hides irrelevant elements */
 div#support,
 p.screenshots,
 body > nav > article:last-child {
     display: none;
+}
+
+/* Targeted post has a solid instead of dotted outline */
+.thread tr:target,
+.thread tr.target {
+    outline-style: solid;
+}
+/* Fixes slighly pink border on the bottom */
+.thread tr:target > td,
+.thread tr.target > td {
+    border-bottom: none;
 }
