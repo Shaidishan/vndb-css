@@ -106,3 +106,17 @@ body > nav > article:last-child {
     /* Smallest width for the label to be in one line */
     width: 74px;
 }
+
+
+/* Makes "report user" links on profiles not italic */
+p.itemmsg > a {
+    font-style: normal;
+}
+
+
+/* Improves default input color button */
+input[type="color"] {
+    border: none;
+    height: 18px;
+    vertical-align: sub;
+}
