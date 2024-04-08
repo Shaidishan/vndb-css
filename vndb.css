@@ -87,3 +87,8 @@ body > nav > article:last-child {
     border: 1px solid var(--optselected);
     background-color: var(--secbg);
 }
+
+/* Reverts offset of arrows of links */
+.elm_dd > a > span:last-child {
+    right: 0px;
+}
