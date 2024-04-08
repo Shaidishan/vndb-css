@@ -68,6 +68,7 @@ body > nav > article:last-child {
 .browseopts button:hover {
     border: 1px solid var(--border);
     padding: 1px 3px;
+    background-color: var(--secbg);
 }
 /* Reverts the border removal for selected options */
 .browseopts .optselected {
