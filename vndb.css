@@ -58,7 +58,7 @@ body > nav > article:last-child {
 .thread tr.target {
     outline-style: solid;
 }
-/* Fixes slighly pink border on the bottom */
+/* Fixes slightly pink border on the bottom */
 .thread tr:target > td,
 .thread tr.target > td {
     border-bottom: none;
