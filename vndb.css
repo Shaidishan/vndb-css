@@ -88,7 +88,21 @@ body > nav > article:last-child {
     background-color: var(--secbg);
 }
 
+
 /* Reverts offset of arrows of links */
 .elm_dd > a > span:last-child {
     right: 0px;
+}
+
+
+/* Makes vn notes on a vn list white instead of blue */
+.ulist .tc_title small {
+    color: var(--maintext)
+}
+
+/* Sets a width for labels on a vn list like other columns */
+.ulist .tc_labels {
+    white-space: nowrap;
+    /* Smallest width for the label to be in one line */
+    width: 74px;
 }
