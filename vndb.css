@@ -14,26 +14,22 @@ html {
     --statnok:   rgb(255, 50, 50);
     --boxbg:     rgba(6, 24, 40, 0.75);
 }
-
 /* Defines new colors for use in this stylesheet */
 html {
     --optselected: rgb(180, 208, 255);
     --gold:        rgb(255, 178, 0);
 }
 
-
 /* Removes the Angelic Serenade character (vndb.org/c3005) */
 body {
     background-image: none;
 }
-
 
 /* Styles the title "the visual novel database" */
 body > header h1 {
     font: bold 32px "Arial", serif;
     color: var(--gold);
 }
-
 
 /* Adjusts font families for different sections */
 nav h1, nav h2 {
@@ -43,13 +39,11 @@ main h1, main h2 {
     font-family: "Arial", serif;
 }
 
-
 /* Removes focus outline for checkboxes and radio buttons */
 input[type=checkbox]:focus,
 input[type=radio]:focus {
     outline: none;
 }
-
 
 /* Hides irrelevant elements */
 div#support,
@@ -57,7 +51,6 @@ p.screenshots,
 body > nav > article:last-child {
     display: none;
 }
-
 
 /* Targeted post has a solid instead of dotted outline */
 .thread tr:target,
@@ -69,7 +62,6 @@ body > nav > article:last-child {
 .thread tr.target > td {
     border-bottom: none;
 }
-
 
 /* Reverts the border removal on hover for options */
 .browseopts a:hover,
@@ -88,18 +80,15 @@ body > nav > article:last-child {
     background-color: var(--secbg);
 }
 
-
 /* Reverts offset of arrows of links */
 .elm_dd > a > span:last-child {
     right: 0px;
 }
 
-
 /* Makes vn notes on a vn list white instead of blue */
 .ulist .tc_title small {
     color: var(--maintext)
 }
-
 /* Sets a width for labels on a vn list like other columns */
 .ulist .tc_labels {
     white-space: nowrap;
@@ -107,12 +96,10 @@ body > nav > article:last-child {
     width: 74px;
 }
 
-
 /* Makes "report user" links on profiles not italic */
 p.itemmsg > a {
     font-style: normal;
 }
-
 
 /* Improves default input color button */
 input[type="color"] {
