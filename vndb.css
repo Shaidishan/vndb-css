@@ -63,3 +63,20 @@ body > nav > article:last-child {
 .thread tr.target > td {
     border-bottom: none;
 }
+
+/* Reverts the border removal on hover for options */
+.browseopts a:hover,
+.browseopts button:hover {
+    border: 1px solid var(--border);
+    padding: 1px 3px;
+}
+/* Reverts the border removal for selected options */
+.browseopts .optselected {
+    border: 1px solid var(--optselected);
+    padding: 1px 3px;
+}
+/* Reverts the border removal on hover for selected options */
+.browseopts .optselected:hover {
+    border: 1px solid var(--optselected);
+    background-color: var(--secbg);
+}
