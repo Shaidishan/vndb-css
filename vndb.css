@@ -1,19 +1,25 @@
 /* 
 Custom CSS for vndb.org's "Angelic Serenade (dark blue)" skin.
 Disable design-altering extensions such as Dark Reader.
-Last updated: 28/03/2024
+Last updated: 08/04/2024
 */
 
 /* Color overrides */
 html {
     --grayedout: rgb(132, 182, 224);
-    --boxtitle:  rgb(132, 182, 224);
-    --footer:    rgb(132, 182, 224);
+    --boxtitle:  var(--grayedout);
+    --footer:    var(--grayedout);
     --border:    rgb(40, 100, 160);
-    --secborder: rgb(40, 100, 160);
+    --secborder: var(--border);
     --statok:    rgb(50, 255, 50);
     --statnok:   rgb(255, 50, 50);
     --boxbg:     rgba(6, 24, 40, 0.75);
+}
+
+/* Defines new colors for use in this stylesheet */
+html {
+    --optselected: rgb(180, 208, 255);
+    --gold:        rgb(255, 178, 0);
 }
 
 /* Removes the Angelic Serenade character (vndb.org/c3005) */
@@ -24,8 +30,9 @@ body {
 /* Styles the title "the visual novel database" */
 body > header h1 {
     font: bold 32px "Arial", serif;
-    color: rgb(255, 178, 0);
+    color: var(--gold);
 }
+
 nav h1, nav h2 {
     font-family: "Tahoma", serif;
 }
