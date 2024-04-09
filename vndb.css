@@ -49,6 +49,11 @@ input[type=radio]:focus {
     outline: none;
 }
 
+/* Removes underline on the footer links */
+main > footer a {
+    text-decoration-style: none;
+}
+
 /* Hides irrelevant elements */
 div#support,
 p.screenshots,
@@ -114,7 +119,7 @@ input[type="color"] {
     vertical-align: sub;
 }
 
-/* Centers and makes the homepage articles more eye-pleasing*/
+/* Centers and makes the homepage articles more eye-pleasing */
 .homepage p.mainopts {
     margin: 6px 0 0 0;
 }
