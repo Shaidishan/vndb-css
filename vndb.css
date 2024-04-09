@@ -72,6 +72,12 @@ body > nav > article:last-child {
     border-bottom: none;
 }
 
+/* Changes colors for selection of text */
+::selection {
+    background-color: rgb(0, 80, 180);
+    color: rgb(255, 255, 255);
+}
+
 /* Reverts the border removal on hover for options */
 .browseopts a:hover,
 .browseopts button:hover {
