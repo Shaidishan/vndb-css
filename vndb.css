@@ -109,3 +109,14 @@ input[type="color"] {
     height: 18px;
     vertical-align: sub;
 }
+
+/* Centers and makes the homepage articles more eye-pleasing*/
+.homepage p.mainopts {
+    margin: 6px 0 0 0;
+}
+.homepage h1 {
+    margin: 3px 0 5px 3px;
+}
+.homepage article {
+    padding: 0 2px 3px 2px;
+}
