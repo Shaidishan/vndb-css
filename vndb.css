@@ -1,7 +1,7 @@
 /*
 Custom CSS for vndb.org's "Angelic Serenade (dark blue)" skin.
 Disable design-altering extensions such as Dark Reader.
-Last updated: 08/04/2024
+Last updated: 09/04/2024
 */
 /* Color overrides */
 html {
@@ -86,9 +86,10 @@ body > nav > article:last-child {
     right: 0px;
 }
 
-/* Makes vn notes on a vn list white instead of blue */
+/* Makes vn notes on a vn list like normal text and new lines actually render */
 .ulist .tc_title small {
-    color: var(--maintext)
+    color: var(--maintext);
+    white-space-collapse: preserve-breaks;
 }
 /* Sets a width for labels on a vn list like other columns */
 .ulist .tc_labels {
