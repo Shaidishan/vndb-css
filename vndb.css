@@ -55,10 +55,14 @@ body > nav > article:last-child {
     display: none;
 }
 
-/* VN notes on VN lists are like normal text and new lines render */
+/* Notes on VN lists are like normal text and new lines render */
 .ulist .tc_title small {
     color: var(--maintext);
     white-space: pre-wrap;
+}
+/* Column headers on VN lists won't have wrapping */
+.ulist thead {
+    white-space: nowrap;
 }
 
 /* Targeted posts have a solid instead of dotted outline (e.g. vndb.org/t22501.1) */
