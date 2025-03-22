@@ -55,6 +55,12 @@ body > nav > article:last-child {
     display: none;
 }
 
+/* VN notes on VN lists are like normal text and new lines render */
+.ulist .tc_title small {
+    color: var(--maintext);
+    white-space: pre-wrap;
+}
+
 /* Targeted posts have a solid instead of dotted outline (e.g. vndb.org/t22501.1) */
 tr:target,
 tr.target {
@@ -95,21 +101,6 @@ tr.target {
 .elm_dd > a > span:last-child {
     right: 0px;
 }
-
-/* Due to the recent changes to VN lists, I will rewrite this section later 
-
-/* Makes vn notes on a vn list like normal text and new lines actually render
-.ulist .tc_title small {
-    color: var(--maintext);
-    white-space: pre-wrap;
-}
-/* Sets a width for labels on a vn list like other columns
-.ulist .tc_labels {
-    white-space: nowrap;
-    /* Smallest width for the label to be in one line
-    width: 74px;
-}
-*/
 
 /* Report links in various pages are not italic */
 p.itemmsg > a {
