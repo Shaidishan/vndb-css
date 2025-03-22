@@ -56,8 +56,8 @@ body > nav > article:last-child {
 }
 
 /* Targeted posts have a solid instead of dotted outline (e.g. vndb.org/t22501.1) */
-.thread tr:target,
-.thread tr.target {
+tr:target,
+tr.target {
     outline-style: solid;
 }
 .thread tr:target > td,
