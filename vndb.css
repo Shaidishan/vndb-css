@@ -64,8 +64,12 @@ body > nav > article:last-child {
 .ulist thead {
     white-space: nowrap;
 }
-/* Padding for title and notes on VN lists lowered from 30px to 10px */
+/* Padding for titles and notes on VN lists are lowered from 30px to 10px */
 .ulist .tc_title {
+    padding-left: 10px;
+}
+/* Padding for popups on VN lists are lowered from 20px to 10px */
+.ulist .tc_ulist {
     padding-left: 10px;
 }
 
