@@ -29,7 +29,7 @@ body {
 
 /* Styles the title "the visual novel database" */
 body > header h1 {
-    font: bold 32px "Arial", serif;
+    font: bold 24px "Arial", serif;
     color: var(--gold);
 }
 
