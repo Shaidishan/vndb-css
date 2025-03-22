@@ -64,6 +64,10 @@ body > nav > article:last-child {
 .thread tr.target > td {
     border-bottom: none;
 }
+:has(.thread tr.target:first-child) .browsetabs .highlightselected,
+:has(.thread tr:target:first-child) .browsetabs .highlightselected {
+    height: 21px;
+}
 
 /* Changes colors for selection of text */
 ::selection {
