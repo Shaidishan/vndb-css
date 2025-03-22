@@ -64,6 +64,10 @@ body > nav > article:last-child {
 .ulist thead {
     white-space: nowrap;
 }
+/* Padding for title and notes on VN lists lowered from 30px to 10px */
+.ulist .tc_title {
+    padding-left: 10px;
+}
 
 /* Targeted posts have a solid instead of dotted outline (e.g. vndb.org/t22501.1) */
 tr:target,
