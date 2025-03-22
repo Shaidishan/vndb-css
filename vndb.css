@@ -1,21 +1,19 @@
 /*
-Custom CSS for vndb.org's "Angelic Serenade (dark blue)" skin.
-Disable design-altering extensions such as Dark Reader.
-Last updated: 27/05/2024
+Custom CSS for vndb's Angelic Serenade skin.
+Last updated: 2025/03/22
 */
-/* Color overrides */
-html {
-    --grayedout: rgb(132, 182, 224);
-    --boxtitle:  var(--grayedout);
-    --footer:    var(--grayedout);
-    --border:    rgb(40, 100, 160);
-    --secborder: var(--border);
-    --statok:    rgb(50, 255, 50);
-    --statnok:   rgb(255, 50, 50);
-    --boxbg:     rgba(6, 24, 40, 0.75);
-}
-/* Defines new colors for use in this stylesheet */
-html {
+
+html
+/* Color overrides */{
+    --grayedout:   rgb(132, 182, 224);
+    --boxtitle:    var(--grayedout);
+    --footer:      var(--grayedout);
+    --border:      rgb(40, 100, 160);
+    --secborder:   var(--border);
+    --statok:      rgb(50, 255, 50);
+    --statnok:     rgb(255, 50, 50);
+    --boxbg:       rgba(6, 24, 40, 0.75);
+    /* New colors */
     --optselected: rgb(180, 208, 255);
     --gold:        rgb(255, 178, 0);
 }
@@ -35,7 +33,6 @@ body > header h1 {
     color: var(--gold);
 }
 
-/* Adjusts font families for different sections */
 nav h1, nav h2 {
     font-family: "Tahoma", serif;
 }
@@ -43,13 +40,13 @@ main h1, main h2 {
     font-family: "Arial", serif;
 }
 
-/* Removes focus outline for checkboxes and radio buttons */
+/* Removes ugly outline for checkboxes and radios when focused */
 input[type=checkbox]:focus,
 input[type=radio]:focus {
     outline: none;
 }
 
-/* Removes underline on the footer links */
+/* Removes ugly underline for footer links */
 main > footer a {
     text-decoration: none;
 }
@@ -61,12 +58,11 @@ body > nav > article:last-child {
     display: none;
 }
 
-/* Targeted post has a solid instead of dotted outline */
+/* Targeted posts have a solid instead of dotted outline (e.g. vndb.org/t22501.1) */
 .thread tr:target,
 .thread tr.target {
     outline-style: solid;
 }
-/* Removes buttom border on a targeted post because the solid outline works as a border */
 .thread tr:target > td,
 .thread tr.target > td {
     border-bottom: none;
@@ -78,54 +74,55 @@ body > nav > article:last-child {
     color: rgb(255, 255, 255);
 }
 
-/* Reverts the border removal on hover for options */
+/* Options (like in vndb.org/v?sq=) look a lot better */
 .browseopts a:hover,
 .browseopts button:hover {
     border: 1px solid var(--border);
     padding: 1px 3px;
     background-color: var(--secbg);
 }
-/* Reverts the border removal for selected options */
 .browseopts .optselected {
     border: 1px solid var(--optselected);
     padding: 1px 3px;
 }
-/* Reverts the border removal on hover for selected options */
 .browseopts .optselected:hover {
     border: 1px solid var(--optselected);
     background-color: var(--secbg);
 }
 
-/* Reverts offset of arrows of links */
+/* Puts in a better place hidden arrows when selecting certain elements */
 .elm_dd > a > span:last-child {
     right: 0px;
 }
 
-/* Makes vn notes on a vn list like normal text and new lines actually render */
+/* Due to the recent changes to VN lists, I will rewrite this section later 
+
+/* Makes vn notes on a vn list like normal text and new lines actually render
 .ulist .tc_title small {
     color: var(--maintext);
     white-space: pre-wrap;
 }
-/* Sets a width for labels on a vn list like other columns */
+/* Sets a width for labels on a vn list like other columns
 .ulist .tc_labels {
     white-space: nowrap;
-    /* Smallest width for the label to be in one line */
+    /* Smallest width for the label to be in one line
     width: 74px;
 }
+*/
 
-/* Makes "report user" links on profiles not italic */
+/* Report links in various pages are not italic */
 p.itemmsg > a {
     font-style: normal;
 }
 
-/* Improves default input color button */
+/* Improves input color button (Only gets used on the Tags & Traits tab in account profiles) */
 input[type="color"] {
     border: none;
     height: 18px;
     vertical-align: sub;
 }
 
-/* Centers and makes the homepage articles more eye-pleasing */
+/* Fixes some spacing on the home page */
 .homepage p.mainopts {
     margin: 6px 0 0 0;
 }
@@ -135,3 +132,4 @@ input[type="color"] {
 .homepage article {
     padding: 0 2px 3px 2px;
 }
+
