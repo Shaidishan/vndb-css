@@ -4,18 +4,18 @@ Last updated: 2025/03/25
 */
 
 html {
+    /* New colors */
+    --gold:        rgb(255, 178, 0);
+    --optselected: rgb(180, 208, 255);
+    --sectext:     rgb(132, 182, 224);
     /* Color overrides */
-    --grayedout:   rgb(132, 182, 224);
-    --boxtitle:    var(--grayedout);
-    --footer:      var(--grayedout);
+    --boxtitle:    var(--sectext);
+    --footer:      var(--sectext);
     --border:      rgb(40, 100, 160);
     --secborder:   var(--border);
     --statok:      rgb(50, 255, 50);
     --statnok:     rgb(255, 50, 50);
     --boxbg:       rgba(6, 24, 40, 0.75);
-    /* New colors */
-    --optselected: rgb(180, 208, 255);
-    --gold:        rgb(255, 178, 0);
 }
 
 /* Remove the Angelic Serenade character (vndb.org/c3005) */
@@ -54,6 +54,17 @@ div#support,
 p.screenshots,
 body > nav > article:last-child {
     display: none;
+}
+
+/* Set various elements to secondary text color */
+body > * nav > menu > li > a {
+    color: var(--sectext);
+}
+.elm_dd_input .elm_dd > a > small {
+    color: var(--sectext);
+}
+.quote-score a {
+    color: var(--sectext);
 }
 
 /* VN lists */
