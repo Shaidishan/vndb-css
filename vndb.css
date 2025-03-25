@@ -69,7 +69,7 @@ body > nav > article:last-child {
 .ulist .tc_title {
     padding-left: 10px;
 }
-/* Padding for popups on VN lists are lowered from 20px to 10px */
+/* Padding before releases on VN lists are lowered from 20px to 10px */
 .ulist .tc_ulist {
     padding-left: 10px;
 }
@@ -137,4 +137,3 @@ input[type="color"] {
 .homepage article {
     padding: 0 2px 3px 2px;
 }
-
