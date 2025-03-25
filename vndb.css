@@ -18,16 +18,16 @@ html {
     --gold:        rgb(255, 178, 0);
 }
 
-/* Removes the Angelic Serenade character (vndb.org/c3005) */
+/* Remove the Angelic Serenade character (vndb.org/c3005) */
 body {
     background-image: none;
 }
-/* Makes the right background image follow while scrolling */
+/* Make the right background image follow while scrolling */
 #bgright {
     position: fixed;
 }
 
-/* Styles the title "the visual novel database" */
+/* Style the title "the visual novel database" */
 body > header h1 {
     font: bold 24px "Arial", serif;
     color: var(--gold);
@@ -38,18 +38,18 @@ main h2 {
     font-family: "Arial", serif;
 }
 
-/* Removes ugly outline for checkboxes and radios when focused */
+/* Remove ugly outline for checkboxes and radios when focused */
 input[type=checkbox]:focus,
 input[type=radio]:focus {
     outline: none;
 }
 
-/* Removes ugly underline for footer links */
+/* Remove ugly underline for footer links */
 main > footer a {
     text-decoration: none;
 }
 
-/* Hides irrelevant elements */
+/* Hide irrelevant elements */
 div#support,
 p.screenshots,
 body > nav > article:last-child {
@@ -98,7 +98,7 @@ tr.target {
     height: 21px;
 }
 
-/* Changes colors for selection of text */
+/* Change colors for selection of text */
 ::selection {
     background-color: rgb(0, 80, 180);
     color: rgb(255, 255, 255);
@@ -126,7 +126,7 @@ tr.target {
     top: 2px;
 }
 
-/* Puts in a better place hidden arrows when selecting certain elements */
+/* Put in a better place hidden arrows when selecting certain elements */
 .elm_dd > a > span:last-child {
     right: 0px;
 }
@@ -136,14 +136,14 @@ p.itemmsg > a {
     font-style: normal;
 }
 
-/* Improves input color button (Only gets used on the Tags & Traits tab in account profiles) */
+/* Improve input color button (Only gets used on the Tags & Traits tab in account profiles) */
 input[type="color"] {
     border: none;
     height: 18px;
     vertical-align: sub;
 }
 
-/* Fixes some spacing on the home page */
+/* Fix some spacing on the home page */
 .homepage p.mainopts {
     margin: 6px 0 0 0;
 }
