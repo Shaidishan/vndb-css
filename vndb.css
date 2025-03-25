@@ -79,9 +79,14 @@ body > nav > article:last-child {
 }
 .ulist button.ds svg {
     float: none;
-/* Shift arrow slighly to align with text */
+/* Shift arrow to align with text */
     position: relative;
     top: 2px;
+}
+/* Shift editing pencil to align with dates */
+.ulist .tc_date svg {
+    position: relative;
+    top: 3px;
 }
 
 /* Targeted posts have a solid instead of dotted outline (e.g. vndb.org/t22501.1) */
