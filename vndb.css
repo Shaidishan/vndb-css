@@ -3,8 +3,8 @@ Custom CSS for vndb's Angelic Serenade skin.
 Last updated: 2025/03/25
 */
 
-html
-/* Color overrides */{
+html {
+    /* Color overrides */
     --grayedout:   rgb(132, 182, 224);
     --boxtitle:    var(--grayedout);
     --footer:      var(--grayedout);
