@@ -56,21 +56,19 @@ body > nav > article:last-child {
     display: none;
 }
 
-/* Notes on VN lists are like normal text and new lines render */
+/* VN lists */
+/* Notes' color is like normal text and new lines render */
 .ulist .tc_title small {
     color: var(--maintext);
     white-space: pre-wrap;
 }
-/* Column headers on VN lists won't have wrapping */
+/* Column headers don't have wrapping */
 .ulist thead {
     white-space: nowrap;
 }
-/* Padding for titles and notes on VN lists are lowered from 30px to 10px */
+/* Padding for the first column and title column is reduced to 10px */
+.ulist .tc_ulist,
 .ulist .tc_title {
-    padding-left: 10px;
-}
-/* Padding before releases on VN lists are lowered from 20px to 10px */
-.ulist .tc_ulist {
     padding-left: 10px;
 }
 /* Editing arrow on label and vote columns are in line with text */
