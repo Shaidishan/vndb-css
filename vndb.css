@@ -73,6 +73,16 @@ body > nav > article:last-child {
 .ulist .tc_ulist {
     padding-left: 10px;
 }
+/* Editing arrow on label and vote columns are in line with text */
+.ulist button.ds {
+    white-space: nowrap;
+}
+.ulist button.ds svg {
+    float: none;
+/* Shift arrow slighly to align with text */
+    position: relative;
+    top: 2px;
+}
 
 /* Targeted posts have a solid instead of dotted outline (e.g. vndb.org/t22501.1) */
 tr:target,
