@@ -83,11 +83,6 @@ body > nav > article:last-child {
     position: relative;
     top: 2px;
 }
-/* Shift widget button to align with releases text */
-.ulist [class^="icon-list-"] {
-    position: relative;
-    top: 2px;
-}
 
 /* Targeted posts have a solid instead of dotted outline (e.g. vndb.org/t22501.1) */
 tr:target,
@@ -123,6 +118,12 @@ tr.target {
 .browseopts .optselected:hover {
     border: 1px solid var(--optselected);
     background-color: var(--secbg);
+}
+
+/* Shift icons to align with text */
+[class^="icon-list-"] {
+    position: relative;
+    top: 2px;
 }
 
 /* Puts in a better place hidden arrows when selecting certain elements */
