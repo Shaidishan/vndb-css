@@ -83,6 +83,11 @@ body > nav > article:last-child {
     position: relative;
     top: 2px;
 }
+/* Shift widget button to align with releases text */
+.ulist [class^="icon-list-"] {
+    position: relative;
+    top: 2px;
+}
 
 /* Targeted posts have a solid instead of dotted outline (e.g. vndb.org/t22501.1) */
 tr:target,
