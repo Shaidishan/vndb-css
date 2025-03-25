@@ -74,6 +74,7 @@ body > nav > article:last-child {
 /* Editing arrow on label and vote columns are in line with text */
 .ulist button.ds {
     white-space: nowrap;
+    margin-top: -5px;
 }
 .ulist button.ds svg {
     float: none;
