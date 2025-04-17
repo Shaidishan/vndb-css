@@ -1,6 +1,6 @@
 /*
 Custom CSS for vndb's Angelic Serenade skin.
-Last updated: 2025/03/25
+Last updated: 2025/04/17
 */
 
 html {
@@ -51,7 +51,6 @@ main > footer a {
 
 /* Hide irrelevant elements */
 div#support,
-p.screenshots,
 body > nav > article:last-child {
     display: none;
 }
